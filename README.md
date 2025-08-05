@@ -12,6 +12,30 @@ WASFixer solves the common problem where the Windows Audio service (`Audiosrv`) 
 
 **Administrator Rights Required**: The service requires Administrator privileges to function properly, as it needs to control Windows system services.
 
+## 📦 Installation
+
+### **Automatic Installation**
+1. Download `WASFixerSetup.exe`
+2. Run as Administrator
+3. Follow the installation wizard
+4. Service starts automatically after installation
+
+### **Manual Installation**
+1. Compile the source code:
+   ```batch
+   compile.bat
+   ```
+2. Copy `WASFixer.exe` to desired location
+3. Run as Administrator for first time setup
+4. Optionally add to startup via registry
+
+### **Registry Integration**
+The installer automatically adds the service to Windows startup:
+```
+HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run
+"WASFixer"="\"C:\\Program Files\\WASFixer\\WASFixer.exe\""
+```
+
 ## ✨ Features
 
 ### **Minimal Resource Usage**
@@ -57,30 +81,6 @@ WASFixer solves the common problem where the Windows Audio service (`Audiosrv`) 
 2. **If stopping detected**: Immediately attempt to restart
 3. **If already stopped**: Log as critical and restart
 4. **State tracking**: Monitor transitions for detailed logging
-
-## 📦 Installation
-
-### **Automatic Installation**
-1. Download `WASFixerSetup.exe`
-2. Run as Administrator
-3. Follow the installation wizard
-4. Service starts automatically after installation
-
-### **Manual Installation**
-1. Compile the source code:
-   ```batch
-   compile.bat
-   ```
-2. Copy `WASFixer.exe` to desired location
-3. Run as Administrator for first time setup
-4. Optionally add to startup via registry
-
-### **Registry Integration**
-The installer automatically adds the service to Windows startup:
-```
-HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run
-"WASFixer"="\"C:\\Program Files\\WASFixer\\WASFixer.exe\""
-```
 
 ## 📊 Performance Metrics
 
