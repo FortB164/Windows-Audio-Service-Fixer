@@ -27,6 +27,17 @@ HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run
 "WASFixer"="\"C:\\Program Files\\WASFixer\\WASFixer.exe\""
 ```
 
+## 🗑️ **Uninstallation**
+1. **Automatic Uninstaller:**
+   - Navigate to: `C:\Program Files\Windows Audio Services Fixer\`
+   - Run `unins000.exe` (or similar uninstaller executable)
+   - Follow the uninstallation wizard
+
+2. **Manual Cleanup (if needed):**
+   - Stop the `WASFixer.exe` process in Task Manager
+   - Delete the installation folder: `C:\Program Files\Windows Audio Services Fixer\`
+   - Delete the log folder: `C:\ProgramData\AudioFix\`
+
 ## ✨ Features
 
 ### **Minimal Resource Usage**
@@ -133,16 +144,7 @@ If you want to force start the service manually:
 2. Monitor log file for activity
 3. Test by attempting to stop Windows Audio service
 
-### **Uninstallation**
-1. **Automatic Uninstaller:**
-   - Navigate to: `C:\Program Files\Windows Audio Services Fixer\`
-   - Run `unins000.exe` (or similar uninstaller executable)
-   - Follow the uninstallation wizard
 
-2. **Manual Cleanup (if needed):**
-   - Stop the `WASFixer.exe` process in Task Manager
-   - Delete the installation folder: `C:\Program Files\Windows Audio Services Fixer\`
-   - Delete the log folder: `C:\ProgramData\AudioFix\`
 
 ## 🔍 Troubleshooting
 
