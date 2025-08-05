@@ -20,15 +20,6 @@ WASFixer solves the common problem where the Windows Audio service (`Audiosrv`) 
 3. Follow the installation wizard
 4. Service starts automatically after installation
 
-### **Manual Installation**
-1. Compile the source code:
-   ```batch
-   compile.bat
-   ```
-2. Copy `WASFixer.exe` to desired location
-3. Run as Administrator for first time setup
-4. Optionally add to startup via registry
-
 ### **Registry Integration**
 The installer automatically adds the service to Windows startup:
 ```
