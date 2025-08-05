@@ -15,8 +15,8 @@ WASFixer solves the common problem where the Windows Audio service (`Audiosrv`) 
 ## 📦 Installation
 
 ### **Automatic Installation**
-1. Download `WASFixerSetup.exe`
-2. Run as Administrator
+1. Download and run `WASFixerSetup.exe`
+2. It should be as Administrator
 3. Follow the installation wizard
 4. Service starts automatically after installation
 
