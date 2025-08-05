@@ -28,15 +28,15 @@ HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run
 ```
 
 ## 🗑️ **Uninstallation**
-1. **Automatic Uninstaller:**
-   - Navigate to: `C:\Program Files\Windows Audio Services Fixer\`
-   - Run `unins000.exe` (or similar uninstaller executable)
-   - Follow the uninstallation wizard
+### **Automatic Uninstallion:**
+1. Navigate to: `C:\Program Files\Windows Audio Services Fixer\`
+2. Run `unins000.exe` (or similar uninstaller executable)
+3. Follow the uninstallation wizard
 
-2. **Manual Cleanup (if needed):**
-   - Stop the `WASFixer.exe` process in Task Manager
-   - Delete the installation folder: `C:\Program Files\Windows Audio Services Fixer\`
-   - Delete the log folder: `C:\ProgramData\AudioFix\`
+### **Manual Cleanup (if needed):**
+1. Stop the `WASFixer.exe` process in Task Manager
+2. Delete the installation folder: `C:\Program Files\Windows Audio Services Fixer\`
+3. Delete the log folder: `C:\ProgramData\AudioFix\`
 
 ## ✨ Features
 
