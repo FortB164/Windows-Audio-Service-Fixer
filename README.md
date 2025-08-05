@@ -38,6 +38,24 @@ HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run
 2. Delete the installation folder: `C:\Program Files\Windows Audio Services Fixer\`
 3. Delete the log folder: `C:\ProgramData\AudioFix\`
 
+## 🚀 Usage
+
+### **Running the Service**
+It runs automatically
+
+### **Force Starting the Service (manually, if needed)** 
+1. Open Command Prompt as Administrator
+2. Navigate to the installation directory:
+   ```batch
+   cd "C:\Program Files\Windows Audio Services Fixer"
+   ```
+   or wherever you downloaded to
+3. Type:
+   ```batch
+   WASFixer.exe
+   ```
+4. Hit Enter to start the service
+
 ## ✨ Features
 
 ### **Minimal Resource Usage**
@@ -118,33 +136,10 @@ C:\ProgramData\AudioFix\audioFix.log
 - **Encoding**: UTF-16 LE with BOM
 - **Flushing**: Immediate disk writes
 
-## 🚀 Usage
-
-### **Running the Service**
-```batch
-# Run as Administrator
-WASFixer.exe
-```
-
-### **Force Starting the Service**
-If you want to force start the service manually:
-1. Open Command Prompt as Administrator
-2. Navigate to the installation directory:
-   ```batch
-   cd "C:\Program Files\Windows Audio Services Fixer"
-   ```
-3. Run the executable:
-   ```batch
-   WASFixer.exe
-   ```
-4. Press Enter to start the service
-
 ### **Verification**
 1. Check Task Manager for `WASFixer.exe` process
 2. Monitor log file for activity
 3. Test by attempting to stop Windows Audio service
-
-
 
 ## 🔍 Troubleshooting
 
