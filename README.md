@@ -12,8 +12,6 @@ WASFixer solves the common problem where the Windows Audio service (`Audiosrv`) 
 
 **Administrator Rights Required**: The service requires Administrator privileges to function properly, as it needs to control Windows system services.
 
----
-
 ## ✨ Features
 
 ### **Minimal Resource Usage**
