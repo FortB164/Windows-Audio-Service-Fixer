@@ -16,16 +16,8 @@ WASFixer solves the common problem where the Windows Audio service (`Audiosrv`) 
 
 ### **Automatic Installation**
 1. Download and run `WASFixerSetup.exe`
-2. It should be as Administrator
-3. Follow the installation wizard
-4. Service starts automatically after installation
-
-### **Registry Integration**
-The installer automatically adds the service to Windows startup:
-```
-HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run
-"WASFixer"="\"C:\\Program Files\\WASFixer\\WASFixer.exe\""
-```
+2. Follow the installation wizard
+3. Service starts automatically after installation
 
 ## 🗑️ **Uninstallation**
 ### **Automatic Uninstallion:**
@@ -119,7 +111,7 @@ It runs automatically
 
 ### **Log Location**
 ```
-C:\ProgramData\AudioFix\audioFix.log
+C:\ProgramData\WASFixer\WASFixer.log
 ```
 
 ### **Log Format**
@@ -132,7 +124,7 @@ C:\ProgramData\AudioFix\audioFix.log
 
 ### **Log Rotation**
 - **Max size**: 10KB
-- **Backup**: `audioFix.log.bak`
+- **Backup**: `WASFixer.log.bak`
 - **Encoding**: UTF-16 LE with BOM
 - **Flushing**: Immediate disk writes
 
@@ -151,7 +143,7 @@ C:\ProgramData\AudioFix\audioFix.log
 - Verify `Audiosrv` service exists
 
 **Log file not created:**
-- Check `C:\ProgramData\AudioFix\` permissions
+- Check `C:\ProgramData\WASFixer\` permissions
 - Ensure Administrator privileges
 - Verify disk space
 
@@ -177,19 +169,6 @@ C:\ProgramData\AudioFix\audioFix.log
 - **Minimal privileges**: Only what's necessary for audio service control
 - **Error handling**: Graceful degradation on permission issues
 
-## 📈 Development
-
-### **Source Code Structure**
-- **Main loop**: `monitor_service()` - Core monitoring logic
-- **Service operations**: `is_service_running()`, `start_service()`
-- **Logging system**: `log_message()`, `rotate_log_if_needed()`
-- **File operations**: `ensure_log_directory()`, `write_utf16_bom()`
-
-### **Key Functions**
-- **`is_service_stopping()`**: Detects `SERVICE_STOP_PENDING` state
-- **`start_service()`**: Restarts audio service with error handling
-- **`log_message()`**: UTF-16 logging with automatic rotation
-- **`monitor_service()`**: Main monitoring loop with state tracking
 
 ## 📄 License
 
@@ -204,7 +183,6 @@ The project is focused on reliability and minimal resource usage. Any improvemen
 - Professional logging
 
 ---
-
 
 **Version**: 1.0  
 **Author**: Tanmay Malik  
