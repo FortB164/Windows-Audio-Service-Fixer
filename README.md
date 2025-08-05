@@ -4,7 +4,7 @@ A lightweight, professional Windows service that actively prevents the Windows A
 
 ## 🎯 Purpose
 
-WASFixer solves the common problem where the Windows Audio service (`Audiosrv`) gets stopped accidentally or by other applications, causing audio to stop working. The service continuously monitors the audio service and immediately restarts it if it detects any stop attempts.
+WASFixer solves the common problem where the Windows Audio service (`Audiosrv`) gets stopped randomly or accidentally by other applications, causing audio to stop working. The service continuously monitors the audio service and immediately restarts it if it detects any stop attempts.
 
 ## ⚠️ Disclaimer
 
@@ -16,17 +16,17 @@ WASFixer solves the common problem where the Windows Audio service (`Audiosrv`) 
 
 ## ✨ Features
 
-### **Active Prevention**
-- **Real-time monitoring**: Checks audio service status every second
-- **Preventive action**: Detects stop attempts and immediately counteracts them
-- **State tracking**: Distinguishes between "stopping" and "stopped" states
-- **Immediate response**: Restarts service within 1 second of detection
-
 ### **Minimal Resource Usage**
 - **Memory**: Less than 5MB RAM when idling
 - **CPU**: Less than 0.1% CPU usage
 - **Disk**: Lightweight 19KB executable
 - **Background**: Runs silently without console window
+  
+### **Active Prevention**
+- **Real-time monitoring**: Checks audio service status every second
+- **Preventive action**: Detects stop attempts and immediately counteracts them
+- **State tracking**: Distinguishes between "stopping" and "stopped" states
+- **Immediate response**: Restarts service within 1 second of detection
 
 ### **Professional Logging**
 - **UTF-16 encoded logs**: Proper Unicode support
